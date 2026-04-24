@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { ContactCard } from '@/components/ContactCard';
 import { ContactForm } from '@/components/ContactForm';
@@ -42,23 +43,72 @@ const pillars = [
 
 const team = [
   {
-    initials: 'MN',
-    role: 'Director and Founder',
-    name: 'Mr Njozela',
-    body: 'Admitted as an attorney in 1997, Mr Njozela leads the firm with decades of litigation and community-based legal experience.',
+    image: '/images/m-njozela.jpg',
+    role: 'Managing Director',
+    name: 'Mr. Mbuyekezo Njozela',
+    credentials: ['B. Juris LLB (UNITRA)', 'Dip. Corporate Law (UNISA)', 'Investment Management (UCT)'],
+    body: 'Leads the firm with a grounded legal and commercial background that supports the practice’s long-standing client and community focus.',
     featured: true,
   },
   {
-    initials: 'LT',
-    role: 'Legal Team',
-    name: 'Attorneys and Advisors',
-    body: 'The legal team supports RAF claims, legal consultations, and case preparation with a strong emphasis on clear client communication.',
+    image: '/images/sombo.jpg',
+    role: 'Admitted Attorney',
+    name: 'Mr. Vuyisa Sombo',
+    credentials: ['LLB (UWC)', 'PVT (UCT School of Law)', 'Cert. Trial Advocacy (UCT)'],
+    body: 'Supports clients with admitted-attorney experience and a practice approach shaped by litigation training and courtroom preparation.',
   },
   {
-    initials: 'AT',
-    role: 'Administration and Support',
-    name: 'Admin Team',
-    body: 'The admin team coordinates bookings, submissions, client communication, and the operational follow-through that keeps matters moving.',
+    image: '/images/madiba.jpg',
+    role: 'Candidate Legal Practitioner',
+    name: 'Mr. Obakeng Madiba',
+    credentials: [
+      'LLB (UFS)',
+      'Cert. Commercial Law (Bowmans)',
+      'Cert. Parliamentarian Health and Security Preparedness (WHO)',
+    ],
+    body: 'Brings developing legal practice experience with added exposure to commercial law and public-sector health preparedness.',
+  },
+  {
+    image: '/images/ndunyana.jpg',
+    role: 'Candidate Legal Practitioner',
+    name: 'Ms. Khanyisiwe Ndunyana',
+    credentials: ['LLB (UFS)', 'PVT (UCT-Leads)', 'Cert. Trial Advocacy (UCT)'],
+    body: 'Contributes to client matters with legal training that combines academic grounding, vocational preparation, and trial advocacy.',
+  },
+  {
+    image: '/images/tobi.jpg',
+    role: 'Senior Legal Administrator',
+    name: 'Mr. Phumlani Tobi',
+    credentials: ['LLB (NMU)'],
+    body: 'Helps keep legal processes organised and responsive by connecting administrative delivery with legal training.',
+  },
+  {
+    image: '/images/papa.jpg',
+    role: 'Administrator',
+    name: 'Ms. Ncedisa Papa',
+    credentials: ['Office Administration (CPUT)'],
+    body: 'Supports the day-to-day running of the practice through structured office administration and client-facing coordination.',
+  },
+  {
+    image: '/images/silwana.jpg',
+    role: 'Administrator',
+    name: 'Mr. Collen Silwana',
+    credentials: ['Public Sector Management and Administration (UFH)', 'B. Administration'],
+    body: 'Strengthens operational delivery with administrative support informed by public-sector management training.',
+  },
+  {
+    image: '/images/jokazi.jpg',
+    role: 'Reception and Administration',
+    name: 'Ms. Gcobisa Jokazi',
+    credentials: ['Business Management (Boland College)'],
+    body: 'Welcomes clients into the practice and supports front-desk administration with a strong service orientation.',
+  },
+  {
+    image: '/images/mbovane.jpg',
+    role: 'Runner',
+    name: 'Ms. Sandiswa Mbovane',
+    credentials: [],
+    body: 'Provides essential delivery and support work that helps matters move smoothly across the firm’s daily operations.',
   },
 ];
 
@@ -249,9 +299,6 @@ export default function HomePage() {
             <p className="serif mt-6 text-2xl leading-10 text-[var(--foreground)]">
               Njozela Attorneys Inc serves clients with practical legal guidance, local credibility, and a long-standing presence in Khayelitsha.
             </p>
-            <p className="section-copy mt-6 max-w-2xl text-base">
-              The firm&apos;s positioning is rooted in professional service, accessibility, and focused support for RAF matters and related legal consultations. This version of the site carries the supplied template&apos;s more formal editorial look while keeping the current Next.js structure.
-            </p>
             <div className="mt-8 overflow-hidden rounded-[4px] border border-[var(--border)]">
               {facts.map((fact) => (
                 <div key={fact.label} className="fact-row">
@@ -276,9 +323,6 @@ export default function HomePage() {
               <div className="section-eyebrow">What We Do</div>
               <h2 className="template-title mt-4">Our <em>practice</em> areas.</h2>
             </div>
-            <p className="section-copy max-w-2xl text-base">
-              The template&apos;s card-based service layout now frames the firm around clarity, authority, and easy scanning for new visitors who need legal support quickly.
-            </p>
           </div>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -336,17 +380,31 @@ export default function HomePage() {
             {team.map((member) => (
               <article
                 key={member.name}
-                className={`template-card overflow-hidden bg-white ${member.featured ? 'lg:col-span-3 lg:grid lg:grid-cols-[220px_1fr]' : ''}`}
+                className={`template-card overflow-hidden bg-white ${member.featured ? 'lg:col-span-3 lg:grid lg:grid-cols-[320px_1fr]' : ''}`}
               >
-                <div className="flex min-h-48 items-center justify-center bg-[linear-gradient(135deg,var(--surface-soft),var(--background))]">
-                  <div className="serif flex h-20 w-20 items-center justify-center rounded-full bg-[var(--surface-dark)] text-3xl text-[var(--brand-light)]">
-                    {member.initials}
-                  </div>
+                <div className="relative min-h-64 bg-[linear-gradient(135deg,var(--surface-soft),var(--background))]">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    sizes={member.featured ? '(min-width: 1024px) 320px, 100vw' : '(min-width: 1024px) 33vw, 100vw'}
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-8">
                   <div className="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-[var(--brand)]">{member.role}</div>
                   <h3 className="serif mt-2 text-3xl text-[var(--foreground)]">{member.name}</h3>
                   <p className="mt-4 text-sm leading-8 text-[var(--muted)]">{member.body}</p>
+                  {member.credentials.length > 0 ? (
+                    <div className="mt-6 border-t border-[var(--border)] pt-5">
+                      <div className="text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-[var(--foreground)]">Qualifications</div>
+                      <ul className="mt-3 space-y-2 text-sm leading-7 text-[var(--muted)]">
+                        {member.credentials.map((credential) => (
+                          <li key={credential}>{credential}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
                 </div>
               </article>
             ))}

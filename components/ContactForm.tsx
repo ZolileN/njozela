@@ -1,26 +1,11 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-
 export function ContactForm() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return <div className="min-h-[540px] p-8 md:p-10" aria-hidden="true" />;
-  }
-
   return (
     <div className="p-8 md:p-10">
       <h3 className="serif text-3xl font-normal text-[var(--foreground)]">Send us a message</h3>
 
-      <form action="https://api.web3forms.com/submit" method="POST" className="mt-8 grid gap-5">
-        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-        <input type="hidden" name="subject" value="New consultation request - Njozela Attorneys Inc" />
-        <input type="hidden" name="from_name" value="Njozela Attorneys Inc Website" />
+      <form action="https://formsubmit.co/info@njozela-attorneys-inc.co.za" method="POST" className="mt-8 grid gap-5">
+        <input type="hidden" name="_subject" value="New consultation request - Njozela Attorneys Inc" />
+        <input type="hidden" name="_captcha" value="false" />
 
         <div className="grid gap-5 md:grid-cols-2">
           <div>

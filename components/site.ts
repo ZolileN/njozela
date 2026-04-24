@@ -17,17 +17,17 @@ export const site = {
     {
       title: 'Road Accident Fund Claims',
       description:
-        'Focused legal support for compensation matters arising from qualifying motor vehicle accidents.',
+        'Focused representation for people affected by motor vehicle and pedestrian accidents, backed by thousands of settled claims.',
     },
     {
-      title: 'Personal Injury Matters',
+      title: 'Housing Transferals',
       description:
-        'Professional guidance for injury-related matters with clear communication and practical support.',
+        'Practical legal assistance for property transfer processes and related housing documentation matters.',
     },
     {
-      title: 'Legal Consultations',
+      title: 'Civil Matters and Consultations',
       description:
-        'Accessible consultations for clients who need trusted legal direction before taking the next step.',
+        'Accessible legal guidance for civil matters, document review, and early case direction before the next legal step.',
     },
   ],
 };

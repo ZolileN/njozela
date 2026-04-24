@@ -7,7 +7,7 @@ This is a production-ready Next.js marketing website scaffold for Njozela Attorn
 - Next.js App Router
 - TypeScript
 - Tailwind CSS v4
-- Web3Forms for contact form submissions
+- FormSubmit for contact form submissions
 
 ## Pages
 
@@ -27,15 +27,15 @@ npm run dev
 
 Open http://localhost:3000
 
-## Web3Forms setup
+## Contact form setup
 
-Replace this placeholder in `components/ContactForm.tsx`:
+The contact form posts directly to `formsubmit.co` from `components/ContactForm.tsx`.
+
+Update the recipient email in the form action if needed:
 
 ```tsx
-<input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+<form action="https://formsubmit.co/info@njozela-attorneys-inc.co.za" method="POST">
 ```
-
-with your live Web3Forms access key.
 
 ## Recommended next steps
 
