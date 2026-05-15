@@ -4,6 +4,7 @@ import './globals.css';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { MobileBar } from '@/components/MobileBar';
+import { WhatsAppFloat } from '@/components/WhatsAppFloat';
 
 const serif = Cormorant_Garamond({
   subsets: ['latin'],
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {children}
         <Footer />
         <MobileBar />
+        <WhatsAppFloat />
       </body>
     </html>
   );

@@ -1,33 +1,33 @@
 export const site = {
   name: 'Njozela Attorneys Inc',
-  phoneDisplay: '021 361 9100',
-  phoneHref: 'tel:+27213619100',
-  whatsappDisplay: '078 711 6752',
-  whatsappHref: 'https://wa.me/27787116752',
+  phoneDisplay: '021 361 4040',
+  phoneHref: 'tel:+27213614040',
+  whatsappDisplay: '060 456 0879',
+  whatsappHref: 'https://wa.me/27604560879?text=Hello%20Njozela%20Attorneys%2C%20I%20would%20like%20to%20inquire%20about%20your%20legal%20services.',
   email: 'info@njozela-attorneys-inc.co.za',
   emails: ['info@njozela-attorneys-inc.co.za', 'mnjozelaattorneys@gmail.com'],
   locations: ['Khayelitsha, Cape Town', 'Lithapark, Cape Town'],
   stats: [
     { value: 'Since 2002', label: 'Serving the community' },
     { value: '3,000+', label: 'RAF claims settled' },
-    { value: '28 years', label: 'Legal experience' },
+    { value: '24 years', label: 'Legal experience' },
     { value: '2 offices', label: 'Khayelitsha presence' },
   ],
   services: [
     {
       title: 'Road Accident Fund Claims',
       description:
-        'Focused representation for people affected by motor vehicle and pedestrian accidents, backed by thousands of settled claims.',
+        'Our core focus is helping injured clients and affected families pursue fair compensation through a clearer, guided claims process.',
     },
     {
-      title: 'Housing Transferals',
+      title: 'Personal Injury Matters',
       description:
-        'Practical legal assistance for property transfer processes and related housing documentation matters.',
+        'We assist clients with injury-related legal matters and practical advice shaped around the realities of recovery and financial strain.',
     },
     {
-      title: 'Civil Matters and Consultations',
+      title: 'Legal Consultations',
       description:
-        'Accessible legal guidance for civil matters, document review, and early case direction before the next legal step.',
+        'Clients can access direct legal guidance, document review, and case direction before deciding on the next legal step.',
     },
   ],
 };

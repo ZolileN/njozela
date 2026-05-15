@@ -213,16 +213,16 @@ export default function HomePage() {
   return (
     <main className="overflow-hidden">
       <section className="grid min-h-screen lg:grid-cols-2">
-        <div className="relative flex items-center bg-[var(--surface-dark)] px-6 pb-16 pt-32 text-white sm:px-10 lg:px-16">
+        <div className="relative flex items-center bg-(--surface-dark) px-6 pb-16 pt-32 text-white sm:px-10 lg:px-16">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_50%,rgba(184,147,42,0.12),transparent_60%)]" />
           <div className="relative reveal-up max-w-2xl">
-            <div className="flex items-center gap-3 text-[0.72rem] font-medium uppercase tracking-[0.2em] text-[var(--brand-light)]">
-              <span className="h-px w-7 bg-[var(--brand)]" />
+            <div className="flex items-center gap-3 text-[0.72rem] font-medium uppercase tracking-[0.2em] text-(--brand-light)">
+              <span className="h-px w-7 bg-(--brand)" />
               Established in Khayelitsha
             </div>
             <h1 className="serif mt-8 text-5xl leading-[0.98] font-light sm:text-6xl lg:text-7xl">
               Njozela
-              <span className="mt-2 block italic text-[var(--brand-light)]">Attorneys Inc</span>
+              <span className="mt-2 block italic text-(--brand-light)">Attorneys Inc</span>
             </h1>
             <p className="serif mt-4 text-xl font-light italic text-white/55 sm:text-2xl">
               Legal services in Khayelitsha since 2002
@@ -241,7 +241,7 @@ export default function HomePage() {
             <div className="mt-12 flex flex-wrap gap-8 border-t border-white/10 pt-8">
               {site.stats.slice(1).map((stat) => (
                 <div key={stat.label}>
-                  <div className="serif text-4xl font-semibold text-[var(--brand-light)]">{stat.value}</div>
+                  <div className="serif text-4xl font-semibold text-(--brand-light)">{stat.value}</div>
                   <div className="mt-1 text-[0.72rem] uppercase tracking-[0.14em] text-white/40">{stat.label}</div>
                 </div>
               ))}
@@ -249,7 +249,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="gold-grid relative hidden items-end overflow-hidden bg-[var(--surface-soft)] p-16 lg:flex">
+        <div className="gold-grid relative hidden items-end overflow-hidden bg-(--surface-soft) p-16 lg:flex">
           <div className="absolute left-1/2 top-1/2 flex w-[min(380px,80%)] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6">
             <div className="hero-wheel">
               <div className="hero-wheel-orbit" aria-hidden="true">
@@ -265,11 +265,11 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="reveal-up relative ml-auto max-w-xs border-l-[3px] border-[var(--brand)] bg-white p-8 shadow-[0_18px_60px_rgba(0,0,0,0.1)]">
-            <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--brand)]">
+          <div className="reveal-up relative ml-auto max-w-xs border-l-[3px] border-(--brand) bg-white p-8 shadow-[0_18px_60px_rgba(0,0,0,0.1)]">
+            <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-(--brand)">
               Our Commitment
             </div>
-            <p className="serif mt-3 text-xl leading-8 text-[var(--foreground)]">
+            <p className="serif mt-3 text-xl leading-8 text-(--foreground)">
               Justice made more accessible to the communities we serve.
             </p>
           </div>
@@ -279,16 +279,16 @@ export default function HomePage() {
       <section className="template-section bg-white px-6 sm:px-10 lg:px-16">
         <div className="container-shell grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="relative min-h-[320px]">
-            <div className="absolute inset-0 overflow-hidden rounded-[4px] bg-[var(--surface-dark)] p-8">
+            <div className="absolute inset-0 overflow-hidden rounded-[4px] bg-(--surface-dark) p-8">
               <div className="serif absolute left-8 top-4 text-8xl font-semibold leading-none text-white/5">2002</div>
               <div className="relative flex h-full items-end">
                 <p className="serif max-w-md text-3xl font-light leading-[1.45] text-white">
-                  From a local practice to a trusted community firm with <span className="text-[var(--brand-light)]">decades of service</span>.
+                  From a local practice to a trusted community firm with <span className="text-(--brand-light)">decades of service</span>.
                 </p>
               </div>
             </div>
-            <div className="absolute -right-4 -top-4 flex h-24 w-24 flex-col items-center justify-center rounded-[4px] bg-[var(--brand)] text-center text-[var(--foreground)]">
-              <span className="serif text-3xl font-semibold">28</span>
+            <div className="absolute -right-4 -top-4 flex h-24 w-24 flex-col items-center justify-center rounded-[4px] bg-(--brand) text-center text-(--foreground)">
+              <span className="serif text-3xl font-semibold">24</span>
               <span className="text-[0.62rem] uppercase tracking-[0.12em]">Years</span>
             </div>
           </div>
@@ -296,19 +296,19 @@ export default function HomePage() {
           <div className="reveal-up">
             <div className="section-eyebrow">Our Story</div>
             <h2 className="template-title mt-4">Built on <em>community,</em> driven by justice.</h2>
-            <p className="serif mt-6 text-2xl leading-10 text-[var(--foreground)]">
+            <p className="serif mt-6 text-2xl leading-10 text-(--foreground)">
               Njozela Attorneys Inc serves clients with practical legal guidance, local credibility, and a long-standing presence in Khayelitsha.
             </p>
-            <div className="mt-8 overflow-hidden rounded-[4px] border border-[var(--border)]">
+            <div className="mt-8 overflow-hidden rounded-[4px] border border-(--border)">
               {facts.map((fact) => (
                 <div key={fact.label} className="fact-row">
                   <span className="fact-icon">
                     <TemplateIcon kind={fact.icon as 'location' | 'justice' | 'people'} />
                   </span>
-                  <div className="min-w-24 text-[0.74rem] font-semibold uppercase tracking-[0.08em] text-[var(--foreground)]">
+                  <div className="min-w-24 text-[0.74rem] font-semibold uppercase tracking-[0.08em] text-(--foreground)">
                     {fact.label}
                   </div>
-                  <div className="text-sm text-[var(--muted)]">{fact.value}</div>
+                  <div className="text-sm text-(--muted)">{fact.value}</div>
                 </div>
               ))}
             </div>
@@ -316,7 +316,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="template-section bg-[var(--background)] px-6 sm:px-10 lg:px-16">
+      <section className="template-section bg-(--background) px-6 sm:px-10 lg:px-16">
         <div className="container-shell">
           <div className="grid gap-8 lg:grid-cols-2 lg:items-end">
             <div>
@@ -331,16 +331,16 @@ export default function HomePage() {
                 key={service.number}
                 className={`template-card service-card ${service.highlight ? 'service-highlight' : ''}`}
               >
-                <div className={`serif text-6xl font-semibold ${service.highlight ? 'text-[rgba(255,255,255,0.08)]' : 'text-[var(--surface-soft)]'}`}>
+                <div className={`serif text-6xl font-semibold ${service.highlight ? 'text-[rgba(255,255,255,0.08)]' : 'text-(--surface-soft)'}`}>
                   {service.number}
                 </div>
                 <div className="service-icon mt-6">
                   <TemplateIcon kind={service.icon as 'road' | 'health' | 'justice'} />
                 </div>
-                <h3 className={`serif mt-6 text-3xl ${service.highlight ? 'text-[var(--brand-light)]' : 'text-[var(--foreground)]'}`}>
+                <h3 className={`serif mt-6 text-3xl ${service.highlight ? 'text-(--brand-light)' : 'text-(--foreground)'}`}>
                   {service.title}
                 </h3>
-                <p className={`mt-4 text-sm leading-8 ${service.highlight ? 'text-white/60' : 'text-[var(--muted)]'}`}>
+                <p className={`mt-4 text-sm leading-8 ${service.highlight ? 'text-white/60' : 'text-(--muted)'}`}>
                   {service.body}
                 </p>
               </article>
@@ -349,10 +349,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[var(--surface-dark)] px-6 py-20 text-white sm:px-10 lg:px-16">
+      <section className="relative overflow-hidden bg-(--surface-dark) px-6 py-20 text-white sm:px-10 lg:px-16">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(184,147,42,0.1),transparent_50%),radial-gradient(ellipse_at_80%_50%,rgba(184,147,42,0.08),transparent_50%)]" />
         <div className="container-shell relative text-center">
-          <div className="mx-auto w-fit text-xs font-semibold uppercase tracking-[0.28em] text-[var(--brand)]">
+          <div className="mx-auto w-fit text-xs font-semibold uppercase tracking-[0.28em] text-(--brand)">
             Our Purpose
           </div>
           <h2 className="template-title mt-4 text-white">Our <em>mission</em>.</h2>
@@ -392,13 +392,13 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="p-8">
-                  <div className="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-[var(--brand)]">{member.role}</div>
-                  <h3 className="serif mt-2 text-3xl text-[var(--foreground)]">{member.name}</h3>
-                  <p className="mt-4 text-sm leading-8 text-[var(--muted)]">{member.body}</p>
+                  <div className="text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-(--brand)">{member.role}</div>
+                  <h3 className="serif mt-2 text-3xl text-(--foreground)">{member.name}</h3>
+                  <p className="mt-4 text-sm leading-8 text-(--muted)">{member.body}</p>
                   {member.credentials.length > 0 ? (
-                    <div className="mt-6 border-t border-[var(--border)] pt-5">
-                      <div className="text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-[var(--foreground)]">Qualifications</div>
-                      <ul className="mt-3 space-y-2 text-sm leading-7 text-[var(--muted)]">
+                    <div className="mt-6 border-t border-(--border) pt-5">
+                      <div className="text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-(--foreground)">Qualifications</div>
+                      <ul className="mt-3 space-y-2 text-sm leading-7 text-(--muted)">
                         {member.credentials.map((credential) => (
                           <li key={credential}>{credential}</li>
                         ))}
@@ -412,7 +412,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="template-section bg-[var(--background)] px-6 sm:px-10 lg:px-16">
+      <section className="template-section bg-(--background) px-6 sm:px-10 lg:px-16">
         <div className="container-shell grid gap-12 md:grid-cols-[0.92fr_1.08fr] md:items-start">
           <ContactCard />
           <ContactForm />

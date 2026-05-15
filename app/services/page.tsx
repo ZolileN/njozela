@@ -7,7 +7,7 @@ export default function ServicesPage() {
       <SectionIntro
         eyebrow="Services"
         heading="Legal services shaped around the matters clients bring most often."
-        body="The original firm site positions Njozela Attorneys Inc around practical community-facing legal work, with Road Accident Fund claims as a major focus and supporting services in housing and civil matters."
+        body="The firm focuses on practical community-facing legal work, with Road Accident Fund claims as the primary focus supported by personal injury matters and legal consultations."
       />
       <div className="mt-10">
         <ServicesGrid />
@@ -29,7 +29,7 @@ export default function ServicesPage() {
         <div className="card p-8">
           <h3 className="text-xl font-semibold text-slate-900">Consultation-led support</h3>
           <p className="mt-4 leading-8 text-slate-600">
-            Whether a matter proceeds as a RAF claim, a housing transfer, or a civil issue, the firm&apos;s role is to guide clients clearly on documents, process, and next steps.
+            Whether a matter proceeds as a RAF claim, a personal injury matter, or a general legal consultation, the firm&apos;s role is to guide clients clearly on documents, process, and next steps.
           </p>
         </div>
       </div>

@@ -51,8 +51,8 @@ export function ContactCard() {
             <ContactIcon kind="location" />
           </div>
           <div>
-            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[var(--brand)]">Main Office</div>
-            <div className="mt-2 text-sm leading-7 text-[var(--foreground)]">{site.locations[0]}</div>
+            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-(--brand)">Main Office</div>
+            <div className="mt-2 text-sm leading-7 text-(--foreground)">{site.locations[0]}</div>
           </div>
         </div>
 
@@ -61,8 +61,8 @@ export function ContactCard() {
             <ContactIcon kind="location" />
           </div>
           <div>
-            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[var(--brand)]">Branch Office</div>
-            <div className="mt-2 text-sm leading-7 text-[var(--foreground)]">{site.locations[1]}</div>
+            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-(--brand)">Branch Office</div>
+            <div className="mt-2 text-sm leading-7 text-(--foreground)">{site.locations[1]}</div>
           </div>
         </div>
 
@@ -71,8 +71,8 @@ export function ContactCard() {
             <ContactIcon kind="phone" />
           </div>
           <div>
-            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[var(--brand)]">Phone</div>
-            <a className="mt-2 block text-sm leading-7 text-[var(--foreground)] transition hover:text-[var(--brand-dark)]" href={site.phoneHref}>
+            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-(--brand)">Phone</div>
+            <a className="mt-2 block text-sm leading-7 text-(--foreground) transition hover:text-(--brand-dark)" href={site.phoneHref}>
               {site.phoneDisplay}
             </a>
           </div>
@@ -83,12 +83,12 @@ export function ContactCard() {
             <ContactIcon kind="email" />
           </div>
           <div>
-            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[var(--brand)]">Email</div>
+            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-(--brand)">Email</div>
             <div className="mt-2 space-y-1">
               {site.emails.map((email) => (
                 <a
                   key={email}
-                  className="block text-sm leading-7 text-[var(--foreground)] transition hover:text-[var(--brand-dark)]"
+                  className="block text-sm leading-7 text-(--foreground) transition hover:text-(--brand-dark)"
                   href={`mailto:${email}`}
                 >
                   {email}
