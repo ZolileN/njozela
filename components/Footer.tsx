@@ -12,7 +12,7 @@ export function Footer() {
               <span className="serif text-3xl text-white">Njozela Attorneys Inc</span>
             </Link>
             <p className="mt-4 max-w-md text-sm leading-7 text-white/50">
-              Providing justice for our community since 2002, with focused support in Road Accident Fund claims and related legal services in Khayelitsha.
+              Providing justice for our community since 2002, with focused support in Road Accident Fund claims in Khayelitsha.
             </p>
           </div>
 
@@ -22,7 +22,6 @@ export function Footer() {
             </div>
             <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
               <Link href="/about" className="transition hover:text-[var(--brand-light)]">About</Link>
-              <Link href="/services" className="transition hover:text-[var(--brand-light)]">Services</Link>
               <Link href="/raf-claims" className="transition hover:text-[var(--brand-light)]">RAF Claims</Link>
               <Link href="/contact" className="transition hover:text-[var(--brand-light)]">Contact</Link>
             </div>

@@ -31,11 +31,9 @@ export function ContactForm() {
         <div suppressHydrationWarning>
           <label className="mb-2 block text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-(--muted)">Nature of enquiry</label>
           <select name="service" className="w-full border border-(--border) bg-white px-4 py-3 outline-none transition focus:border-(--brand)" defaultValue="">
-            <option value="" disabled>Select a service</option>
+            <option value="" disabled>Select enquiry type</option>
             <option>Road Accident Fund Claim</option>
-            <option>Personal Injury Matter</option>
-            <option>Legal Consultation</option>
-            <option>Other Legal Matter</option>
+            <option>Other Enquiry</option>
           </select>
         </div>
 

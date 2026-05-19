@@ -7,22 +7,22 @@ import { site } from '@/components/site';
 const services = [
   {
     number: '01',
-    title: 'Road Accident Fund Claims',
-    body: 'Our core focus is helping injured clients and affected families pursue fair compensation through a clearer, guided claims process.',
-    icon: 'road',
+    title: 'Claim Evaluation & Consultation',
+    body: 'We review your accident details and injuries to determine if your matter qualifies as a valid Road Accident Fund claim.',
+    icon: 'justice',
     highlight: true,
   },
   {
     number: '02',
-    title: 'Personal Injury Matters',
-    body: 'We assist clients with injury-related legal matters and practical advice shaped around the realities of recovery and financial strain.',
-    icon: 'health',
+    title: 'Document Preparation & Lodgment',
+    body: 'We guide you in preparing and organising all essential supporting documents and medical records required for lodgment.',
+    icon: 'road',
   },
   {
     number: '03',
-    title: 'Legal Consultations',
-    body: 'Clients can access direct legal guidance, document review, and case direction before deciding on the next legal step.',
-    icon: 'justice',
+    title: 'Claim Management & Settlement',
+    body: 'We provide full legal representation, managing the claim process and seeking fair compensation for you and your family.',
+    icon: 'handshake',
   },
 ];
 
@@ -30,7 +30,7 @@ const facts = [
   { label: 'Main Office', value: 'Khayelitsha, Cape Town', icon: 'location' },
   { label: 'Branch', value: 'Lithapark, Cape Town', icon: 'location' },
   { label: 'Founded', value: 'Serving clients since 2002', icon: 'justice' },
-  { label: 'Focus', value: 'RAF claims and legal consultations', icon: 'people' },
+  { label: 'Focus', value: 'Exclusively Road Accident Fund claims', icon: 'people' },
 ];
 
 const pillars = [
@@ -228,14 +228,14 @@ export default function HomePage() {
               Legal services in Khayelitsha since 2002
             </p>
             <p className="mt-8 max-w-xl text-base leading-8 text-white/65 sm:text-lg">
-              With more than two decades of experience, the firm provides accessible legal support with a strong focus on Road Accident Fund claims and client-centred service.
+              With more than two decades of experience, the firm provides accessible legal support focused exclusively on Road Accident Fund claims and client-centred representation.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Link href="/contact" className="btn-primary">
                 Free Consultation
               </Link>
-              <Link href="/services" className="btn-secondary">
-                Our Services
+              <Link href="/raf-claims" className="btn-secondary">
+                RAF Claims
               </Link>
             </div>
             <div className="mt-12 flex flex-wrap gap-8 border-t border-white/10 pt-8">

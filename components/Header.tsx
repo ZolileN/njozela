@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 
 const navItems = [
   { href: '/about', label: 'About' },
-  { href: '/services', label: 'Services' },
   { href: '/raf-claims', label: 'RAF Claims' },
   { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
@@ -59,7 +58,7 @@ export function Header() {
 
           <nav className="hidden items-center gap-8 md:flex">
             {navItems.map((item) => {
-              const isDarkSection = isHome && !scrolled && item.label !== 'About';
+              const isDarkSection = isHome && !scrolled;
               return (
                 <Link
                   key={item.href}

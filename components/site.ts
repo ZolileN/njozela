@@ -19,15 +19,5 @@ export const site = {
       description:
         'Our core focus is helping injured clients and affected families pursue fair compensation through a clearer, guided claims process.',
     },
-    {
-      title: 'Personal Injury Matters',
-      description:
-        'We assist clients with injury-related legal matters and practical advice shaped around the realities of recovery and financial strain.',
-    },
-    {
-      title: 'Legal Consultations',
-      description:
-        'Clients can access direct legal guidance, document review, and case direction before deciding on the next legal step.',
-    },
   ],
 };

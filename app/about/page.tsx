@@ -25,7 +25,7 @@ export default function AboutPage() {
             <li>• Established in 2002 and incorporated as Njozela Attorneys Inc in 2025</li>
             <li>• Main office at Khayelitsha Training Centre with a branch in Lithapark</li>
             <li>• Led by Mr Njozela with a team of 8 staff members</li>
-            <li>• Known especially for personal injury and RAF claim work</li>
+            <li>• Known especially for Road Accident Fund (RAF) claim work</li>
           </ul>
         </div>
       </div>
