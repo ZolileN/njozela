@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { site } from './site';
 
@@ -7,9 +8,14 @@ export function Footer() {
       <div className="container-shell py-14">
         <div className="grid gap-10 border-b border-white/10 pb-10 sm:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <Link href="/" className="flex items-center gap-3">
-              <span className="h-7 w-7 shrink-0 bg-[var(--brand)] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]" />
-              <span className="serif text-3xl text-white">Njozela Attorneys Inc</span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/logo-blue.jpeg"
+                alt="Njozela Attorneys Inc"
+                width={160}
+                height={90}
+                className="h-12 w-auto object-contain"
+              />
             </Link>
             <p className="mt-4 max-w-md text-sm leading-7 text-white/50">
               Providing justice for our community since 2002, with focused support in Road Accident Fund claims in Khayelitsha.
@@ -17,7 +23,7 @@ export function Footer() {
           </div>
 
           <div>
-            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[var(--brand)]">
+            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[var(--brand-light)]">
               Quick Links
             </div>
             <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
@@ -28,7 +34,7 @@ export function Footer() {
           </div>
 
           <div>
-            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[var(--brand)]">
+            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-[var(--brand-light)]">
               Contact
             </div>
             <div className="mt-4 flex flex-col gap-3 text-sm text-white/60">
