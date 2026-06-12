@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -31,29 +32,20 @@ export function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'border-b border-(--border) bg-[rgba(247,244,239,0.92)] backdrop-blur' : 'bg-transparent'
+        isScrolled ? 'border-b border-(--border) bg-[rgba(255,255,255,0.95)] backdrop-blur shadow-sm' : 'bg-transparent'
       }`}
     >
-      <div className="container-shell py-4">
+      <div className="container-shell py-3">
         <div className="flex items-center justify-between gap-6">
-          <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-            <span className="h-7 w-7 shrink-0 bg-(--brand) [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]" />
-            <div>
-              <div
-                className={`serif text-2xl font-semibold tracking-[0.02em] transition-colors duration-300 ${
-                  isScrolled ? 'text-(--foreground)' : 'text-white/90'
-                }`}
-              >
-                Njozela Attorneys
-              </div>
-              <div
-                className={`text-[0.65rem] uppercase tracking-[0.22em] transition-colors duration-300 ${
-                  isScrolled ? 'text-(--muted)' : 'text-white/45'
-                }`}
-              >
-                Khayelitsha Legal Services
-              </div>
-            </div>
+          <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
+            <Image
+              src={isScrolled ? '/images/logo.jpeg' : '/images/logo-blue.jpeg'}
+              alt="Njozela Attorneys Inc"
+              width={160}
+              height={90}
+              className="h-10 w-auto object-contain transition-all duration-300"
+              priority
+            />
           </Link>
 
           <nav className="hidden items-center gap-8 md:flex">
@@ -71,7 +63,7 @@ export function Header() {
                 </Link>
               );
             })}
-            <Link href="/contact" className="bg-(--foreground) px-5 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-(--brand) hover:text-(--foreground)">
+            <Link href="/contact" className="bg-(--foreground) px-5 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-(--brand) hover:text-white">
               Free Consultation
             </Link>
           </nav>

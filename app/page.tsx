@@ -214,10 +214,10 @@ export default function HomePage() {
     <main className="overflow-hidden">
       <section className="grid min-h-screen lg:grid-cols-2">
         <div className="relative flex items-center bg-(--surface-dark) px-6 pb-16 pt-32 text-white sm:px-10 lg:px-16">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_50%,rgba(184,147,42,0.12),transparent_60%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_50%,rgba(147,197,253,0.08),transparent_60%)]" />
           <div className="relative reveal-up max-w-2xl">
             <div className="flex items-center gap-3 text-[0.72rem] font-medium uppercase tracking-[0.2em] text-(--brand-light)">
-              <span className="h-px w-7 bg-(--brand)" />
+              <span className="h-px w-7 bg-(--brand-light)" />
               Established in Khayelitsha
             </div>
             <h1 className="serif mt-8 text-5xl leading-[0.98] font-light sm:text-6xl lg:text-7xl">
@@ -287,7 +287,7 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="absolute -right-4 -top-4 flex h-24 w-24 flex-col items-center justify-center rounded-[4px] bg-(--brand) text-center text-(--foreground)">
+            <div className="absolute -right-4 -top-4 flex h-24 w-24 flex-col items-center justify-center rounded-[4px] bg-(--brand) text-center text-white">
               <span className="serif text-3xl font-semibold">24</span>
               <span className="text-[0.62rem] uppercase tracking-[0.12em]">Years</span>
             </div>
@@ -350,9 +350,9 @@ export default function HomePage() {
       </section>
 
       <section className="relative overflow-hidden bg-(--surface-dark) px-6 py-20 text-white sm:px-10 lg:px-16">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(184,147,42,0.1),transparent_50%),radial-gradient(ellipse_at_80%_50%,rgba(184,147,42,0.08),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(147,197,253,0.06),transparent_50%),radial-gradient(ellipse_at_80%_50%,rgba(147,197,253,0.05),transparent_50%)]" />
         <div className="container-shell relative text-center">
-          <div className="mx-auto w-fit text-xs font-semibold uppercase tracking-[0.28em] text-(--brand)">
+          <div className="mx-auto w-fit text-xs font-semibold uppercase tracking-[0.28em] text-(--brand-light)">
             Our Purpose
           </div>
           <h2 className="template-title mt-4 text-white">Our <em>mission</em>.</h2>
